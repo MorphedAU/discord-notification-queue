@@ -1,0 +1,14 @@
+[Unit]
+Description=A queue system for discord notifications
+
+[Service]
+User=morphed
+WorkingDirectory=/opt/discord-notification-queue
+ExecStart=/opt/discord-notification-queue/.venv/bin/python app.py
+# optional items below
+Restart=always
+RestartSec=3
+# replace /home/user/.virtualenv/bin/python with your virtualenv and main.py with your script
+
+[Install]
+WantedBy=multi-user.target

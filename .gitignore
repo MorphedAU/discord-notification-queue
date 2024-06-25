@@ -1,3 +1,5 @@
 .env
 .webhooks
 ./venv/
+./.venv/
+discord-queue.db
