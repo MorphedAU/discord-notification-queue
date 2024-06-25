@@ -43,7 +43,7 @@ Use the below curl command to test the application, swapping in your own details
 ```
 curl -X POST -d  '{ 
    "webhook_name": "webhook1",
-   "title": "Test Post", \
+   "title": "Test Post",
    "content": "This is a test post, from the discord notification queue!",
    "username": "Discord Notification Queue"
    }'
